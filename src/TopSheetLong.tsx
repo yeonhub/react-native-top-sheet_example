@@ -3,7 +3,7 @@ import Animated, { AnimatedStyleProp } from 'react-native-reanimated';
 import { StyleSheet, Text } from 'react-native';
 
 interface TopSheetLongProps {
-  animatedOpacityLong: AnimatedStyleProp<any>;
+  animatedOpacityLong: AnimatedStyleProp<{opacity: number}>;
 }
 
 const TopSheetLong: React.FC<TopSheetLongProps> = ({ animatedOpacityLong }) => {

@@ -1,7 +1,11 @@
 import React from 'react';
 import { StyleSheet, Pressable, View } from 'react-native';
 
-const TopSheetBtn: React.FC = ({toggleHeight}) => {
+interface TopSheetBtnProps {
+    toggleHeight: () => void;
+}
+
+const TopSheetBtn: React.FC<TopSheetBtnProps> = ({toggleHeight}) => {
   return (
     <Pressable style = {styles.topSheetBtn} onPress={toggleHeight}>
         <View style = {styles.btnIcon}></View>

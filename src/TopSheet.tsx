@@ -104,11 +104,9 @@ const TopSheet = ():JSX.Element => {
           <Animated.View style={[styles.container, animatedStyles]}>
           <TopSheetShort
               animatedOpacityShort={animatedOpacityShort}
-              toggleHeight={toggleHeight}
             />
             <TopSheetLong
               animatedOpacityLong={animatedOpacityLong}
-              toggleHeight={toggleHeight}
             />
             <TopSheetBtn toggleHeight={toggleHeight} />
           </Animated.View>

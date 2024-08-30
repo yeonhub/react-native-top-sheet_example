@@ -5,7 +5,7 @@ import Animated, { AnimatedStyleProp } from 'react-native-reanimated';
 const { width, height } = Dimensions.get('window');
 
 interface TopSheetShortProps {
-  animatedOpacityShort: AnimatedStyleProp<any>;
+  animatedOpacityShort: AnimatedStyleProp<{opacity: number; zIndex: number}>;
 }
 
 const TopSheetShort: React.FC<TopSheetShortProps> = ({
