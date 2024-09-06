@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
     color: 'black',
+    marginLeft: 10,
   }
  });
 export default Section2;

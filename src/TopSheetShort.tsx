@@ -1,6 +1,7 @@
 import React from 'react';
-import { Dimensions, StyleSheet, Text } from 'react-native';
+import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import Animated, { AnimatedStyleProp } from 'react-native-reanimated';
+import HamMenu from './HamMenu';
 
 const { width, height } = Dimensions.get('window');
 
@@ -13,7 +14,9 @@ const TopSheetShort: React.FC<TopSheetShortProps> = ({
 }) => {
   return (
     <Animated.View style={[styles.shortContainer, animatedOpacityShort]}>
-      <Text style={styles.text}>React Native Top Sheet Short</Text>
+      <View style={styles.imgBox}/>
+      <Text style={styles.text}>React Native Top Sheet</Text>
+    <HamMenu/>
     </Animated.View>
   );
 };
@@ -25,15 +28,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '90%',
     paddingTop: height / 35,
-    height: height / 10,
     alignSelf: 'center',
     bottom: height / 24,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  imgBox:{
+    width: 60,
+    height: 60,
+    backgroundColor: '#424242',
+    borderRadius: 5,
   },
   text: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
-    marginTop: 10,
     color: 'black',
   },
 });
